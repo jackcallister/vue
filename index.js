@@ -10,6 +10,11 @@ const handleClick = () => {
   state.count += 1
 }
 
+// Async
+setTimeout(() => {
+  Vue.set(state, 'count', 10)
+}, 5000)
+
 document.addEventListener('DOMContentLoaded', () => {
   new Vue({
     data: state,
