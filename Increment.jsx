@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-export default Vue.component('Heading', {
+export default Vue.component('Increment', {
   functional: true,
 
   props: {
@@ -10,7 +10,7 @@ export default Vue.component('Heading', {
 
   render: (h, { props }) => {
     return (
-      <h1 on-click={() => { props.onClick() }}>{props.title}</h1>
+      <button on-click={() => { props.onClick() }}>{props.title}</button>
     )
   },
 })

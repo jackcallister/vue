@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Heading from './Heading'
+import Increment from './Increment'
 import Counter from './Counter'
 
 const state = {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     render: (h) => {
       return (
         <div>
-          <Heading title='Click me...' onClick={handleClick} />
+          <Increment title='Click me...' onClick={handleClick} />
           <Counter count={state.count} />
         </div>
       )
